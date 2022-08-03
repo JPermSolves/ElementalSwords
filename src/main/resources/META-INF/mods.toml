@@ -56,3 +56,9 @@ This mod adds elemental swords.
     versionRange="[1.18.2,1.19)"
     ordering="NONE"
     side="BOTH"
+[[dependencies.elementalswords]]
+    modId="quark"
+    mandatory=false
+    versionRange="[1.18.2,1.19)"
+    ordering="AFTER"
+    side="BOTH"
