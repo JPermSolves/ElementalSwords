@@ -1,16 +1,9 @@
 package net.juder.elementalswords;
 
-import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
-
-import net.juder.elementalswords.effect.ModEffects;
 import net.juder.elementalswords.item.ModItems;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -20,7 +13,7 @@ public class ElementalSwords {
     public static final String MOD_ID = "elementalswords";
 
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+   // private static final Logger LOGGER = LogUtils.getLogger();
 
     public ElementalSwords() {
         // Register the setup method for modloading
@@ -29,8 +22,6 @@ public class ElementalSwords {
         //bus.addListener(this::setup);
 
         ModItems.register(bus);
-
-        ModEffects.register(bus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

@@ -5,7 +5,6 @@ import java.util.List;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -17,15 +16,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.fml.ModList;
-import net.minecraftforge.registries.ForgeRegistries;
 
-public class IceSword extends SwordItem {
+public class PlantSword extends SwordItem {
 
-    public IceSword(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
+    public PlantSword(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
-    
+
     @Override
     public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
 
@@ -58,17 +55,16 @@ public class IceSword extends SwordItem {
             }
         }
 
+        positions.remove(2);
+        positions.remove(3);
+
         for (BlockPos i : positions) {
             if (level.getBlockState(i).canBeReplaced(new BlockPlaceContext((Player) pAttacker, InteractionHand.MAIN_HAND, pStack, new BlockHitResult(new Vec3(i.getX(), i.getY(), i.getZ()), Direction.UP, i, false)))) {
-                level.setBlockAndUpdate(i, Blocks.POWDER_SNOW.defaultBlockState());
-            } else if (level.getBlockState(i) == Blocks.WATER.defaultBlockState()) {
-                level.setBlockAndUpdate(i, Blocks.ICE.defaultBlockState());
-            } else if (level.getBlockState(i) == Blocks.DIRT.defaultBlockState() || level.getBlockState(i) == Blocks.GRASS.defaultBlockState() && ModList.get().isLoaded("quark")) {
-                level.setBlockAndUpdate(i, ForgeRegistries.BLOCKS.getValue(new ResourceLocation("permafrost")).defaultBlockState());
+                level.setBlockAndUpdate(i, Blocks.OAK_LOG.defaultBlockState());
             }
         }
 
         return super.hurtEnemy(pStack, pTarget, pAttacker);
     }
-
+    
 }
