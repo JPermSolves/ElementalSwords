@@ -12,7 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ElementalSwords.MOD_ID);
 
-    public static final RegistryObject<Item> FIRE_SWORD = ITEMS.register("fire_sword", () -> new FireSword(ModTiers.FIRE_SWORD, 2, 2.0f, new Item.Properties().stacksTo(1).tab(CreativeModeTab.TAB_COMBAT))));
+    public static final RegistryObject<Item> FIRE_SWORD = ITEMS.register("fire_sword", () -> new FireSword(ModTiers.FIRE_SWORD, 2, 2.0f, new Item.Properties().stacksTo(1).tab(CreativeModeTab.TAB_COMBAT)));
 
     public static final RegistryObject<Item> ICE_SWORD = ITEMS.register("ice_sword", () -> new Item(new Item.Properties().stacksTo(1).tab(CreativeModeTab.TAB_COMBAT)));
 
