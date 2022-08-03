@@ -7,6 +7,7 @@ import net.juder.elementalswords.ElementalSwords;
 import net.juder.elementalswords.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -20,6 +21,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoader;
+import net.minecraftforge.registries.ForgeRegistries;
 
 public class IceSword extends SwordItem {
 
@@ -67,7 +69,7 @@ public class IceSword extends SwordItem {
             } else if (level.getBlockState(i) == Blocks.WATER.defaultBlockState()) {
                 level.setBlockAndUpdate(i, Blocks.ICE.defaultBlockState());
             } else if (level.getBlockState(i) == Blocks.DIRT.defaultBlockState() || level.getBlockState(i) == Blocks.GRASS.defaultBlockState() && ModList.get().isLoaded("quark")) {
-                level.setBlockAndUpdate(i, Blocks.POWDER_SNOW.defaultBlockState());
+                level.setBlockAndUpdate(i, ForgeRegistries.BLOCKS.getValue(new ResourceLocation("permafrost")).defaultBlockState());
             }
         }
 
