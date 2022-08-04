@@ -1,6 +1,7 @@
 package net.juder.elementalswords.item;
 
 import net.juder.elementalswords.ElementalSwords;
+import net.juder.elementalswords.item.custom.Bolt;
 import net.juder.elementalswords.item.custom.FireSword;
 import net.juder.elementalswords.item.custom.IceSword;
 import net.juder.elementalswords.item.custom.LightningSword;
@@ -21,9 +22,15 @@ public class ModItems {
 
     public static final RegistryObject<Item> LIGHTNING_SWORD = ITEMS.register("lightning_sword", () -> new LightningSword(ModTiers.LIGHTNING_SWORD, 2, 2, new Item.Properties().stacksTo(1).tab(CreativeModeTab.TAB_COMBAT)));
 
+    public static final RegistryObject<Item> FROSTY_ROD = ITEMS.register("frosty_rod", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+    public static final RegistryObject<Item> BOLT = ITEMS.register("bolt", () -> new Bolt(new Item.Properties().durability(1).tab(CreativeModeTab.TAB_MISC)));
+
     public static final RegistryObject<Item> PLANT_SWORD = ITEMS.register("plant_sword", () -> new PlantSword(ModTiers.PLANT_SWORD, 2, 0, new Item.Properties().stacksTo(1).tab(CreativeModeTab.TAB_COMBAT)));
 
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
+    public static final RegistryObject<Item> NATURE_WOOD = ITEMS.register("nature_wood", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+
+    public static void register(IEventBus bus) {
+        ITEMS.register(bus);
     }
 }

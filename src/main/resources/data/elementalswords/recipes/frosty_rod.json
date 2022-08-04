@@ -1,0 +1,16 @@
+{
+    "type" : "minecraft:crafting_shaped",
+    "pattern" : [
+        "III",
+        "ISI",
+        "III"
+    ],
+    "key" : {
+        "I" : {
+            "item" : "minecraft:blue_ice"
+        },
+        "S" : {
+            "item" : "minecraft:stick"
+        }
+    }
+}

@@ -1,5 +1,6 @@
 package net.juder.elementalswords;
 
+import net.juder.elementalswords.block.ModBlocks;
 import net.juder.elementalswords.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,6 +23,7 @@ public class ElementalSwords {
         //bus.addListener(this::setup);
 
         ModItems.register(bus);
+        ModBlocks.register(bus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

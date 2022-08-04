@@ -1,0 +1,19 @@
+{
+    "type" : "minecraft:crafting_shaped",
+    "pattern" : [
+        " B ",
+        " B ",
+        " R "
+    ],
+    "key" : {
+        "C" : {
+            "item" : "minecraft:powder_snow_bucket"
+        },
+        "R" : {
+            "item" : "minecraft:frosty_rod"
+        }
+    },
+    "result" : {
+        "item" : "elementalswords:ice_sword"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "type" : "minecraft:crafting_shaped",
+    "pattern" : [
+        " C ",
+        " C ",
+        " R "
+    ],
+    "key" : {
+        "C" : {
+            "item" : "minecraft:fire_charge"
+        },
+        "R" : {
+            "item" : "minecraft:blaze_rod"
+        }
+    },
+    "result" : {
+        "item" : "elementalswords:fire_sword"
+    }
+}
