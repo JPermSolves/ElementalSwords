@@ -31,32 +31,47 @@ public class PlantSword extends SwordItem {
         List<BlockPos> positions = new ArrayList<>();
 
         for (int i = -3; i < 2; i++) {
+            if (i == -1 || i == 0) {
+                continue;
+            }
             positions.add(new BlockPos(pTarget.getX(), pTarget.getY() + (i + 1), pTarget.getZ()));
         }
         for (int i = -3; i < 2; i++) {
+            if (i == -1) {
+                continue;
+            }
             positions.add(new BlockPos(pTarget.getX() + (i + 1), pTarget.getY(), pTarget.getZ()));
         }
         for (int i = -3; i < 2; i++) {
+            if (i == -1) {
+                continue;
+            }
             positions.add(new BlockPos(pTarget.getX(), pTarget.getY(), pTarget.getZ() + (i + 1)));
         }
         for (int i = -2; i < 1; i++) {
             for (int j = -2; j < 1; j++) {
+                if (i == -1 || j == -1) {
+                    continue;
+                }
                 positions.add(new BlockPos(pTarget.getX() + (j + 1), pTarget.getY(), pTarget.getZ() + (i + 1)));
             }
         }
         for (int i = -2; i < 1; i++) {
             for (int j = -2; j < 1; j++) {
+                if (i == -1 || j == -1) {
+                    continue;
+                }
                 positions.add(new BlockPos(pTarget.getX(), pTarget.getY()  + (j + 1), pTarget.getZ() + (i + 1)));
             }
         }
         for (int i = -2; i < 1; i++) {
             for (int j = -2; j < 1; j++) {
+                if (i == -1 || j == -1 || (i == 0 && j == -1)) {
+                    continue;
+                }
                 positions.add(new BlockPos(pTarget.getX() + (j + 1), pTarget.getY() + (i + 1), pTarget.getZ()));
             }
         }
-
-        positions.remove(2);
-        positions.remove(3);
 
         for (BlockPos i : positions) {
             if (level.getBlockState(i).canBeReplaced(new BlockPlaceContext((Player) pAttacker, InteractionHand.MAIN_HAND, pStack, new BlockHitResult(new Vec3(i.getX(), i.getY(), i.getZ()), Direction.UP, i, false)))) {
