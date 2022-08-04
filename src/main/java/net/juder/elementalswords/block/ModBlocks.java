@@ -31,6 +31,6 @@ public class ModBlocks {
     }
 
     public static void register(IEventBus bus) {
-        register(bus);
+        BLOCKS.register(bus);
     }
 }

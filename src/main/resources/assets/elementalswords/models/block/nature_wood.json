@@ -1,6 +1,6 @@
 {
     "parent" : "block/cube_all",
     "textures" : {
-        "all" : "minecraft:block/oak_wood"
+        "all" : "elementalswords:block/nature_wood"
     }
 }
