@@ -3,6 +3,7 @@ package net.juder.elementalswords.item.custom;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.juder.elementalswords.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
@@ -13,7 +14,6 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 
@@ -75,7 +75,7 @@ public class PlantSword extends SwordItem {
 
         for (BlockPos i : positions) {
             if (level.getBlockState(i).canBeReplaced(new BlockPlaceContext((Player) pAttacker, InteractionHand.MAIN_HAND, pStack, new BlockHitResult(new Vec3(i.getX(), i.getY(), i.getZ()), Direction.UP, i, false)))) {
-                level.setBlockAndUpdate(i, Blocks.OAK_LOG.defaultBlockState());
+                level.setBlockAndUpdate(i, ModBlocks.NATURE_WOOD.get().defaultBlockState());
             }
         }
 
