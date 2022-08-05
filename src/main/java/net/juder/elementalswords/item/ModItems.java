@@ -28,6 +28,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> PLANT_SWORD = ITEMS.register("plant_sword", () -> new PlantSword(ModTiers.PLANT_SWORD, 2, 0, new Item.Properties().stacksTo(1).tab(CreativeModeTab.TAB_COMBAT)));
 
+    public static final RegistryObject<Item> MOSSY_STICK = ITEMS.register("mossy_stick", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
     public static void register(IEventBus bus) {
         ITEMS.register(bus);
     }

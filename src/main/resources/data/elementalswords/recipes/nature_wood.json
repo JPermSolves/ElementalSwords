@@ -1,0 +1,37 @@
+{
+    "type" : "minecraft:crafting_shaped",
+    "pattern" : [
+        "OSB",
+        "JAD",
+        "WC "
+    ],
+    "key" : {
+        "C" : {
+            "item" : "minecraft:crimson_stem"
+        },
+        "O" : {
+            "item" : "minecraft:oak_log"
+        },
+        "B" : {
+            "item" : "minecraft:birch_log"
+        },
+        "S" : {
+            "item" : "minecraft:spruce_log"
+        },
+        "W" : {
+            "item" : "minecraft:warped_stem"
+        },
+        "J" : {
+            "item" : "minecraft:jungle_log"
+        },
+        "A" : {
+            "item" : "minecraft:accia_log"
+        },
+        "D" : {
+            "item" : "minecraft:dark_oak_log"
+        }
+    },
+    "result" : {
+        "item" : "elementalswords:fire_sword"
+    }
+}

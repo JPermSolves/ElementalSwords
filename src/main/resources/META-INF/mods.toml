@@ -29,7 +29,7 @@ displayName="Elemental Swords" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="elementalswords.png" #optional
 # A text field displayed in the mod UI
-#credits="Thanks for this example mod goes to Java" #optional
+credits="Thanks to the people on the Forge Forums. Special thanks to Luis_ST and diesieben07." #optional
 # A text field displayed in the mod UI
 authors="Jude A. Rasmussen" #optional
 # The description text for the mod (multi line!) (#mandatory)

@@ -5,5 +5,6 @@
     "item.elementalswords.plant_sword" : "Plant Sword",
     "item.elementalswords.bolt" : "Bolt",
     "item.elementalswords.frosty_rod" : "Frosty Rod",
-    "block.elementalswords.nature_wood" : "Nature's Wood"
+    "block.elementalswords.nature_wood" : "Nature's Wood",
+    "item.elementalswords.mossy_stick" : "Mossy Stick"
 }
