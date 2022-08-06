@@ -1,20 +1,20 @@
 {
     "type" : "minecraft:crafting_shaped",
     "pattern" : [
-        "III",
+        "LLL",
         "SSS",
-        "III"
+        "LLL"
     ],
     "key" : {
-        "I" : {
-            "item" : "minecraft:blue_ice"
+        "L" : {
+            "item" : "minecraft:oak_leaves"
         },
         "S" : {
             "item" : "minecraft:stick"
         }
     },
     "result" : {
-        "item" : "elementalswords:frosty_rod",
+        "item" : "elementalswords:mossy_stick",
         "count" : 3
     }
 }

@@ -6,5 +6,6 @@
     "item.elementalswords.bolt" : "Bolt",
     "item.elementalswords.frosty_rod" : "Frosty Rod",
     "block.elementalswords.nature_wood" : "Nature's Wood",
-    "item.elementalswords.mossy_stick" : "Mossy Stick"
+    "item.elementalswords.mossy_stick" : "Mossy Stick",
+    "item.elementalswords.conductor_rod" : "Conductor Rod"
 }

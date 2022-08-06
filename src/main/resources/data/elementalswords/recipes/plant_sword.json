@@ -1,0 +1,19 @@
+{
+    "type" : "minecraft:crafting_shaped",
+    "pattern" : [
+        " N ",
+        " N ",
+        " M "
+    ],
+    "key" : {
+        "N" : {
+            "item" : "elementalswords:nature_wood"
+        },
+        "M" : {
+            "item" : "elementalswords:mossy_stick"
+        }
+    },
+    "result" : {
+        "item" : "elementalswords:plant_sword"
+    }
+}

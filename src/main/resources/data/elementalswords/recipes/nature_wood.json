@@ -25,13 +25,13 @@
             "item" : "minecraft:jungle_log"
         },
         "A" : {
-            "item" : "minecraft:accia_log"
+            "item" : "minecraft:acacia_log"
         },
         "D" : {
             "item" : "minecraft:dark_oak_log"
         }
     },
     "result" : {
-        "item" : "elementalswords:fire_sword"
+        "item" : "elementalswords:nature_wood"
     }
 }

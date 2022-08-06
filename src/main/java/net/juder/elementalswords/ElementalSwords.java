@@ -1,6 +1,7 @@
 package net.juder.elementalswords;
 
 import net.juder.elementalswords.block.ModBlocks;
+import net.juder.elementalswords.event.ModEventBusEvents;
 import net.juder.elementalswords.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;

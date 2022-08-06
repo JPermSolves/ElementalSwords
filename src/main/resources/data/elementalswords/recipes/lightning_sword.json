@@ -7,13 +7,13 @@
     ],
     "key" : {
         "B" : {
-            "item" : "minecraft:powder_snow_bucket"
+            "item" : "elementalswords:bolt"
         },
         "R" : {
-            "item" : "elementalswords:frosty_rod"
+            "item" : "elementalswords:conductor_rod"
         }
     },
     "result" : {
-        "item" : "elementalswords:ice_sword"
+        "item" : "elementalswords:lightning_sword"
     }
 }
